@@ -1,0 +1,30 @@
+/********** SPLASH *********/
+.splash {
+	height: 100vh;
+	background-color: black;
+}
+
+/********** ALL PROPERTIES *********/
+
+.properties {
+	height: 100vh;
+	background-color: white;
+}
+
+.property-tile {
+	border: 1px solid black;
+	height: 33vh;
+	margin: 0;
+}
+
+/********** AGENT *********/
+.agent {
+	height: 100vh;
+	background-color: black;
+}
+
+/********** GENERAL CONTACT *********/
+.general-contact {
+	height: 100vh;
+	background-color: white;
+}
