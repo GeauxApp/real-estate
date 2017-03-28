@@ -5,7 +5,7 @@ function index(req, res){
 		endpoints: [
 			{method: "GET", path: "/api", description: "Describes available endpoints"},
 			{method: "GET", path: "/api/properties", description: "Gets all properties"},
-			{method: "GET", path: "/api/properties/:id", description: "Gets one property"}
+			{method: "GET", path: "/api/properties/:propertyId", description: "Gets one property"}
 		]
 	});
 }

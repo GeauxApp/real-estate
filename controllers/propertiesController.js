@@ -9,16 +9,16 @@ function index(req, res){
 	});
 }
 
-// function show(req, res){
-// 	db.Property.findById(req.params.propertyId, function(err, foundProperty){
-// 		if(err) { console.log('propertiesController.show error', err); }
-// 		console.log('propertiesController.show responding with ', foundProperty);
-// 		res.json(foundProperty);
-// 	});
-// }
+function show(req, res){
+	db.Property.findById(req.params.propertyId, function(err, foundProperty){
+		if(err) { console.log('propertiesController.show error', err); }
+		console.log('propertiesController.show responding with ', foundProperty);
+		res.json(foundProperty);
+	});
+}
 
 //export public methods here
 module.exports = {
 	index: index,
-	// show: show
+	show: show
 }

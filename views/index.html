@@ -13,22 +13,17 @@
     <!-- Latest compiled and minified CSS -->
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-aria.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
- -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 
     <!-- APPLICATION SCRIPTS -->
     <script type="text/javascript" src="scripts/app.js"></script>
-    <!-- <script type="text/javascript" src=".../public/scripts/controllers/propertiesIndexController.js"></script>
-    <script type="text/javascript" src=".../public/scripts/controllers/propertiesShowController.js"></script>
- -->
+    <script type="text/javascript" src="scripts/controllers/propertiesIndexController.js"></script>
+    <script type="text/javascript" src="scripts/controllers/propertiesShowController.js"></script>
+
   </head>
   <body>
     <!-- SPLASH PAGE -->
@@ -52,21 +47,9 @@
         </div>
       </nav>
     </header>
-    <div class="container">
-      <h1 class="text-center">Real Estate App</h1>
-      <div id="propertyTarget">
-        <script id="properties-template" type="text/x-handlebars-template">
-          <hr>
-          <p>{{streetAddress}}</p><br>
-          <p>{{city}}</p><br>
-          <p>{{state}}</p><br>
-          <p>{{bedroomCount}}</p><br>
-          <p>{{bathCount}}</p><br>
-        </script>
-      </div>
-    </div>
 
-    <!-- <div ng-view></div> -->
+
+    <div ng-view></div>
 
     </div>
   </body>
