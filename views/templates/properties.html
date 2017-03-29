@@ -1,22 +1,23 @@
-<!-- SPLASH PAGE -->
+<!-- SPLASH -->
 <div class="main-container" ng-controller="propertiesIndexController as propsIndexCtrl">
   <div class="container-fluid">
-    <div class="splash">
+    <div class="section-one" id="index-splash"></div>
   </div>
 
   <!-- ALL PROPERTIES -->    
-  <div class="properties">
+  <div class="section-two container" id="index-properties">
     <div class="row properties-row" id="properties-top-row" ng-repeat="property in propsIndexCtrl.properties">
-    <div class="col-md-4 property-tile text-center"><a ng-href="properties/{{property._id}}">{{property.streetAddress}}</a></div>
+      <div class="col-md-4 property-tile text-center"><a ng-href="properties/{{property._id}}">{{property.streetAddress}}</a></div>
+    </div>
   </div>
 
   <!-- OUR AGENT -->
-  <div class="agent">
+  <div class="section-three container-fluid" id="index-agent">
     <p>AGENT PAGE</p>
   </div>
 
   <!-- GENERAL CONTACT -->
-  <div class="general-contact">
+  <div class="section-four container-fluid" id="index-general-contact">
     <p>GENERAL CONTACT FORM</p>
   </div>
 </div>

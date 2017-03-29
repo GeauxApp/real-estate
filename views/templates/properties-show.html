@@ -1,8 +1,24 @@
-<!-- SHOW PROPERTY -->
-<div class="property-show" ng-controller="propertiesShowController as propsShowCtrl">
-	<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
-	<p>Details:</p><br>
-	<p>{{bedroomCount}} bedrooms</p>
-	<p>{{bathCount}} baths</p>
+<!-- SHOW SPLASH -->
+<div class="main-container">
+  <div class="container-fluid">
+    <div class="section-one" id="show-splash"></div>
+  </div>
 
+  <!-- SHOW ABOUT PROPERTY -->
+	<div class="section-two" id="show-about" ng-controller="propertiesShowController as propsShowCtrl">
+		<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
+		<p>Details:</p><br>
+		<p>{{bedroomCount}} bedrooms</p>
+		<p>{{bathCount}} baths</p>
+	</div>
+
+  <!-- SHOW PROPERTY HIGHLIGHTS -->
+  <div class="section-three container-fluid" id="show-highlights">
+    <p>PROPERTY HIGHLIGHTS</p>
+  </div>
+
+  <!-- SHOW GALLERY -->
+  <div class="section-four container-fluid" id="show-gallery">
+    <p>GALLERY</p>
+  </div>
 </div>
