@@ -1,4 +1,8 @@
 <!-- SHOW PROPERTY -->
 <div class="property-show" ng-controller="propertiesShowController as propsShowCtrl">
-	<p>{{propsShowCtrl.property.streetAddress}}</p>
+	<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
+	<p>Details:</p><br>
+	<p>{{bedroomCount}} bedrooms</p>
+	<p>{{bathCount}} baths</p>
+
 </div>

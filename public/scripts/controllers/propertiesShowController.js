@@ -9,7 +9,7 @@ angular
 
 		$http({
 			method: 'GET',
-			url: '/api/properties' + $routeParams.id
+			url: '/api/properties/' + $routeParams.id
 		}).then(function successCallback(json){
 			vm.property = json.data;
 		}, function errorCallback(response){
