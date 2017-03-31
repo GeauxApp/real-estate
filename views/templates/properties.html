@@ -6,8 +6,8 @@
 
   <!-- ALL PROPERTIES -->    
   <div class="section-two container" id="index-properties">
-    <div class="row properties-row" id="properties-top-row" ng-repeat="property in propsIndexCtrl.properties">
-      <div class="col-md-4 property-tile text-center"><a ng-href="properties/{{property._id}}">{{property.streetAddress}}</a></div>
+    <div class="row properties-row" id="properties-top-row">
+      <div class="col-md-4 property-tile text-center" ng-repeat="property in propsIndexCtrl.properties"><a ng-href="properties/{{property._id}}">{{property.streetAddress}}</a></div>
     </div>
   </div>
 
@@ -17,7 +17,41 @@
   </div>
 
   <!-- GENERAL CONTACT -->
-  <div class="section-four container-fluid" id="index-general-contact">
-    <p>GENERAL CONTACT FORM</p>
+  <div class="section-four container" id="index-general-contact">
+  
+    <form class="contact-form">
+      <div class="input-group">
+        <h2 class="text-center">Send us a message</h2>
+        <div class="row">
+          <div class="col-xs-6">
+            <input type="text" class="form-control" placeholder="First Name" aria-describedby="sizing-addon1">
+          </div>
+          <div class="col-xs-6">  
+            <input type="text" class="form-control" placeholder="Last Name" aria-describedby="sizing-addon1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">  
+            <input type="text" class="form-control" placeholder="Email" aria-describedby="sizing-addon1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">  
+            <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="sizing-addon1">
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <textarea type="text" class="form-control" placeholder="Message" aria-describedby="sizing-addon1"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button type="button" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
   </div>
 </div>

@@ -11,9 +11,14 @@
 	background-color: white;
 }
 
+.properties-row {
+	height: 80vh;
+	margin-top: 20vh;
+}
+
 .property-tile {
 	border: 1px solid black;
-	height: 33vh;
+	height: 80%;
 	margin: 0;
 }
 
