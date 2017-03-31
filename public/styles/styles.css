@@ -7,6 +7,7 @@
 /********** ALL PROPERTIES *********/
 
 .section-two {
+	width: 90%;
 	height: 100vh;
 	background-color: white;
 }
@@ -17,9 +18,12 @@
 }
 
 .property-tile {
-	border: 1px solid black;
 	height: 80%;
-	margin: 0;
+}
+
+.properties-list-image {
+	max-width: 100%;
+	height: auto;
 }
 
 /********** AGENT *********/
