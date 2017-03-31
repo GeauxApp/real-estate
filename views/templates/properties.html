@@ -5,9 +5,14 @@
   </div>
 
   <!-- ALL PROPERTIES -->    
-  <div class="section-two container" id="index-properties">
+  <div class="section-two container-fluid" id="index-properties">
     <div class="row properties-row" id="properties-top-row">
-      <div class="col-md-4 property-tile text-center" ng-repeat="property in propsIndexCtrl.properties"><a ng-href="properties/{{property._id}}">{{property.streetAddress}}</a></div>
+      <div class="col-md-4 property-tile text-center" ng-repeat="property in propsIndexCtrl.properties">
+        <a ng-href="properties/{{property._id}}">
+          <h2>{{property.streetAddress}}</h2>
+          <img class="properties-list-image" ng-src="{{property.showSplashImage}}">
+        </a>
+      </div>
     </div>
   </div>
 

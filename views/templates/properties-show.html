@@ -1,20 +1,35 @@
 <!-- SHOW SPLASH -->
 <div class="main-container">
-  <div class="container-fluid">
+  <div class="container-fluid" ng-controller="propertiesShowController as propsShowCtrl">
     <div class="section-one" id="show-splash"></div>
+    	<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
+    	<img ng-src="{{propsShowCtrl.property.images[0]}}" alt="{{propsShowCtrl.property.streetAddress}}">
   </div>
 
   <!-- SHOW ABOUT PROPERTY -->
-	<div class="section-two" id="show-about" ng-controller="propertiesShowController as propsShowCtrl">
-		<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
-		<p>Details:</p><br>
-		<p>{{bedroomCount}} bedrooms</p>
-		<p>{{bathCount}} baths</p>
+	<div class="section-two" id="show-about">
+		<div class="row">
+			<div class="col-xs-6">
+				<p>House Image Goes Here</p>
+			</div>
+			<div class="col-xs-6">
+				<h2 class="text-center">About Property</h1>
+				<div class="row">
+					<div class="col-xs-3">
+						<p>New Construction 2016</p>
+						<p>{{bedroomCount}} bedrooms</p>
+						<p>{{bathCount}} baths</p>
+						<p>2500 Sq. Feet</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
   <!-- SHOW PROPERTY HIGHLIGHTS -->
   <div class="section-three container-fluid" id="show-highlights">
     <p>PROPERTY HIGHLIGHTS</p>
+	<p>Details:</p><br>
   </div>
 
   <!-- SHOW GALLERY -->
