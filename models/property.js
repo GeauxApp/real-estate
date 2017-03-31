@@ -6,7 +6,9 @@ var PropertySchema = new Schema({
 	city: String,
 	state: String,
 	bedroomCount: Number,
-	bathCount: Number
+	bathCount: Number,
+	showSplashImage: String,
+	images: Array
 });
 
 //create the property model from the schema
