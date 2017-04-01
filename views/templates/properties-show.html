@@ -1,14 +1,16 @@
 <!-- SHOW SPLASH -->
 <div class="main-container">
   <div class="container-fluid" ng-controller="propertiesShowController as propsShowCtrl">
-    <div class="section-one" id="show-splash"></div>
-    	<p>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
-    	<img ng-src="{{propsShowCtrl.property.images[0]}}" alt="{{propsShowCtrl.property.streetAddress}}">
+    <div class="section-one" id="show-splash">
+    	<span>{{propsShowCtrl.property.streetAddress}}</span>
+    	<img class="splash-image" id="show-splash-image" ng-src="{{propsShowCtrl.property.showSplashImage}}" alt="{{propsShowCtrl.property.streetAddress}}">
+   	</div>
   </div>
 
   <!-- SHOW ABOUT PROPERTY -->
-	<div class="section-two" id="show-about">
+	<div class="section-two container-fluid" id="show-about">
 		<div class="row">
+			<p text-center>{{propsShowCtrl.property.streetAddress}}, {{city}} {{state}}</p>
 			<div class="col-xs-6">
 				<p>House Image Goes Here</p>
 			</div>

@@ -1,15 +1,50 @@
 /********** SPLASH *********/
 .section-one {
 	height: 100vh;
-	background-color: black;
+}
+
+#index-splash-image {
+	height: 100%;
+	width: 100%;
+	overflow-y: hidden;
+/*	filter: grayscale(20%);
+*/
+}
+
+/********** OUR SERVICES *********/
+
+.section-two {
+	width: 90%;
+	height: 50vh;
+}
+
+.service-icon-container {
+	top: 50%;
+	display: inline;
+}
+
+.service-icon {
+	width: 100%;
+}
+
+.service-icon .lnr {
+}
+
+.service-icon-text {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+}
+
+.service-icon-text h2 {
+    text-align: center;
 }
 
 /********** ALL PROPERTIES *********/
 
-.section-two {
+.section-three {
 	width: 90%;
 	height: 100vh;
-	background-color: white;
 }
 
 .properties-row {
@@ -27,13 +62,50 @@
 }
 
 /********** AGENT *********/
-.section-three {
-	height: 100vh;
-	background-color: black;
-}
-
-/********** GENERAL CONTACT *********/
 .section-four {
 	height: 100vh;
-	background-color: white;
 }
+
+#agent-portrait {
+	max-width: 100%;
+	height: auto;
+}
+
+.lnr {
+  color: #0F52BA;
+  font-size: 40px;
+ }
+
+/********** GENERAL CONTACT *********/
+#index-general-contact {
+ height: 100vh;
+ background: 
+        linear-gradient(
+        rgba(34,34,34,0.88),
+        rgba(34,34,34,0.88)
+        ),
+        url('https://github.com/laurakathleen/FW-Construction/blob/master/Images/La-Grande/La-Grande-View.png?raw=true');
+    background-size:cover;
+}
+
+/**********
+***********
+SHOW PAGE
+***********
+**********/
+
+/********** SHOW SPLASH *********/
+#show-splash span {
+	position: absolute;
+	z-index: 2;
+}
+
+#show-splash-image {
+	max-height: 100%;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+
+/********** SHOW ABOUT PROPERTY *********/
+

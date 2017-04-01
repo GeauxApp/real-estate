@@ -1,11 +1,52 @@
 <!-- SPLASH -->
 <div class="main-container" ng-controller="propertiesIndexController as propsIndexCtrl">
   <div class="container-fluid">
-    <div class="section-one" id="index-splash"></div>
+    <div class="section-one" id="index-splash">
+      <img src='http://media.washtimes.com.s3.amazonaws.com/media/image/2012/09/10/20120910-194021-pic-362650133.jpg' class="splash-image" id="index-splash-image" alt="FW Real Estate">
+    </div>
+  </div>
+
+  <!-- OUR SERVICES -->    
+  <div class="section-two container-fluid" id="index-services">
+    <div class="row">
+      <div class="col-xs-2 col-xs-offset-5">
+        <h2 id="services-heading">Our Services</h2>
+      </div>
+    </div>
+    <div class="row service-icon-container">
+      <div class="col-md-3 service-icon text-center">
+        <span class="lnr lnr-map-marker">
+          <div class="service-icon-text">
+            <h2>Properties in prime<br>locations</h2>
+          </div>
+        </span>
+      </div>
+      <div class="col-md-3 service-icon text-center">
+        <span class="lnr lnr-user"><br>
+          <div class="service-icon-text">
+            <h2>Agents with years of experience</h2>
+          </div>
+        </span>
+      </div>
+      <div class="col-md-3 service-icon text-center">
+        <span class="lnr lnr-history"><br>
+          <div class="service-icon-text">
+            <h2>Around the clock<br>customer service</h2>
+          </div>
+        </span>
+      </div>
+      <div class="col-md-3 service-icon text-center">
+        <span class="lnr lnr-funnel"><br>
+          <div class="service-icon-text">
+            <h2>Filtered down properties<br>to fit your needs</h2>
+          </div>
+        </span>
+      </div>
+    </div>
   </div>
 
   <!-- ALL PROPERTIES -->    
-  <div class="section-two container-fluid" id="index-properties">
+  <div class="section-three container-fluid" id="index-properties">
     <div class="row properties-row" id="properties-top-row">
       <div class="col-md-4 property-tile text-center" ng-repeat="property in propsIndexCtrl.properties">
         <a ng-href="properties/{{property._id}}">
@@ -17,12 +58,21 @@
   </div>
 
   <!-- OUR AGENT -->
-  <div class="section-three container-fluid" id="index-agent">
-    <p>AGENT PAGE</p>
+  <div class="section-four container" id="index-agent">
+    <div class="row">
+      <div class="col-xs-6 agent-image-div">
+        <img src="http://srkheadshotday.com/wp-content/uploads/Mary_Leonard_Headshot_G1423_Crop32.jpg" alt="Real Estate Agent" id="agent-portrait">
+      </div>
+      <div class="col-xs-6 text-center">
+        <h2>Our Agent</h2><br>
+        <span class="lnr lnr-smartphone"></span>
+        <span class="lnr lnr-envelope"></span>
+      </div>
+    </div>
   </div>
 
   <!-- GENERAL CONTACT -->
-  <div class="section-four container" id="index-general-contact">
+  <div class="section-five container-fluid" id="index-general-contact">
   
     <form class="contact-form">
       <div class="input-group">
