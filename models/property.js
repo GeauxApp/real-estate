@@ -7,6 +7,7 @@ var PropertySchema = new Schema({
 	state: String,
 	bedroomCount: Number,
 	bathCount: Number,
+	showExteriorImage: String,
 	showSplashImage: String,
 	images: Array
 });
