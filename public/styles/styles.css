@@ -116,3 +116,13 @@ SHOW PAGE
 	width: 80%;
 	margin: 0;
 }
+
+/********** SHOW GALLERY PROPERTY *********/
+#show-gallery ul li {
+	list-style: none;
+	padding-bottom: 2.5%;
+}
+
+.show-gallery-images {
+	max-width: 100%;
+}

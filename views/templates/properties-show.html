@@ -45,7 +45,9 @@
   <div class="section-four container" id="show-gallery">
     <p>GALLERY</p>
     <ul class="row">
-        <li ng-repeat="image in propsShowCtrl.property.images" class="col-md-4"><img ng-src="{{image}}"</li>
+        <li ng-repeat="image in propsShowCtrl.property.images" class="show-gallery-li col-md-4">
+        	<img class="show-gallery-images" ng-src="{{image}}">
+        </li>
     </ul>
   </div>
 </div>
