@@ -1,3 +1,22 @@
+/**********
+***********
+COLOR KEY
+
+green: #c5d5cb;
+blue: #9fa8a3;
+
+***********
+**********/
+header {
+	width: 100%;
+	position: fixed;
+	z-index: 5;
+}
+
+.collapse {
+	background-color: #9fa8a3;
+}
+
 /********** SPLASH *********/
 .section-one {
 	height: 100vh;
@@ -7,6 +26,7 @@
 	height: 100%;
 	width: 100%;
 	overflow-y: hidden;
+	size: cover;
 /*	filter: grayscale(20%);
 */
 }
@@ -41,6 +61,10 @@
 }
 
 /********** ALL PROPERTIES *********/
+#index-properties {
+	background-color: #c5d5cb;
+	width: 100%;
+}
 
 .section-three {
 	width: 90%;
@@ -117,7 +141,27 @@ SHOW PAGE
 	margin: 0;
 }
 
+/********** SHOW HIGHLIGHTS PROPERTY *********/
+#show-highlights {
+	width: 100%;
+	background-color: #c5d5cb;
+}
+
+#show-highlight-image-container {
+	margin-left: 0;
+}
+
+#show-highlight-image {
+	min-height: 100vh;
+	min-width: 100%;
+	overflow-x: hidden;
+}
+
 /********** SHOW GALLERY PROPERTY *********/
+#show-gallery {
+
+}
+
 #show-gallery ul li {
 	list-style: none;
 	padding-bottom: 2.5%;

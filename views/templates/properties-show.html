@@ -31,11 +31,11 @@
   <!-- SHOW PROPERTY HIGHLIGHTS -->
   <div class="section-three container-fluid" id="show-highlights">
   	<div class="row">
-  		<div class="col-md-6">
-  			<img ng-src="{{propsShowCtrl.property.images[1]}}">
+  		<div class="col-md-6" id="show-highlight-image-container">
+  			<img id="show-highlight-image" ng-src="{{propsShowCtrl.property.images[1]}}">
   		</div>
   		<div class="col-md-6">
-    		<p>PROPERTY HIGHLIGHTS</p>
+    		<h2 class="text-center">PROPERTY HIGHLIGHTS</h2>
 			<p>Details:</p>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 
   <!-- SHOW GALLERY -->
   <div class="section-four container" id="show-gallery">
-    <p>GALLERY</p>
+    <h2 class="text-center">GALLERY</h2>
     <ul class="row">
         <li ng-repeat="image in propsShowCtrl.property.images" class="show-gallery-li col-md-4">
         	<img class="show-gallery-images" ng-src="{{image}}">
