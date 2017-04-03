@@ -4,6 +4,9 @@ COLOR KEY
 
 green: #c5d5cb;
 blue: #9fa8a3;
+teal: #0B3948;
+lighter-teal: #416165;
+grey? #46494C;
 
 ***********
 **********/
@@ -15,6 +18,14 @@ header {
 
 .collapse {
 	background-color: #9fa8a3;
+}
+
+body h2 {
+	color: #0B3948;
+}
+
+body a:hover {
+	text-decoration: none;
 }
 
 /********** SPLASH *********/
@@ -96,8 +107,12 @@ header {
 }
 
 .lnr {
-  color: #0F52BA;
-  font-size: 40px;
+	color: #416165;
+	font-size: 40px;
+ }
+
+ .lnr h2 {
+ 	colro: #416165;
  }
 
 /********** GENERAL CONTACT *********/
