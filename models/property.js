@@ -9,7 +9,7 @@ var PropertySchema = new Schema({
 	bathCount: Number,
 	showExteriorImage: String,
 	showSplashImage: String,
-	images: Array
+	images: [String]
 });
 
 //create the property model from the schema

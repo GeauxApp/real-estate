@@ -13,7 +13,7 @@
 
 /********** OUR SERVICES *********/
 
-.section-two {
+#index-services  {
 	width: 90%;
 	height: 50vh;
 }
@@ -108,4 +108,11 @@ SHOW PAGE
 
 
 /********** SHOW ABOUT PROPERTY *********/
+#show-about {
+	height: 100vh;
+}
 
+.show-about-image {
+	width: 80%;
+	margin: 0;
+}
