@@ -47,6 +47,7 @@ body a:hover {
 #index-services  {
 	width: 90%;
 	height: 50vh;
+	padding-top: 50px;
 }
 
 .service-icon-container {
@@ -101,9 +102,22 @@ body a:hover {
 	height: 100vh;
 }
 
+#index-agent {
+	padding-top: 100px;
+}
+
+#index-agent p {
+	font-size: 22px;
+}
+
 #agent-portrait {
 	max-width: 100%;
 	height: auto;
+}
+
+.agent-info-list {
+	list-style: none;
+	display: inline;
 }
 
 .lnr {
@@ -127,6 +141,14 @@ body a:hover {
     background-size:cover;
 }
 
+.contact-form {
+	padding-top: 100px;
+}
+
+.contact-form h2 {
+	color: #fff;
+}
+
 /**********
 ***********
 SHOW PAGE
@@ -134,10 +156,6 @@ SHOW PAGE
 **********/
 
 /********** SHOW SPLASH *********/
-#show-splash span {
-	position: absolute;
-	z-index: 2;
-}
 
 #show-splash-image {
 	max-height: 100%;
@@ -145,14 +163,34 @@ SHOW PAGE
 	overflow-y: hidden;
 }
 
+#show-address {
+	z-index: 5;
+	position: absolute;
+	top: 200px;
+}
+
 
 /********** SHOW ABOUT PROPERTY *********/
+.about-container {
+	padding-top: 100px;
+}
+
 #show-about {
 	height: 100vh;
 }
 
+.show-about-list {
+	list-style: none;
+	width: 100%;
+}
+
+.show-about-list li {
+	display: inline-block;
+	padding: 10px;
+}
+
 .show-about-image {
-	width: 80%;
+	width: 100%;
 	margin: 0;
 }
 
@@ -168,8 +206,16 @@ SHOW PAGE
 
 #show-highlight-image {
 	min-height: 100vh;
-	min-width: 100%;
+	max-width: 100%;
 	overflow-x: hidden;
+}
+
+#show-highlights h2 {
+	padding-top: 50px;
+}
+
+#show-highlights ul li {
+	display: inline;
 }
 
 /********** SHOW GALLERY PROPERTY *********/
